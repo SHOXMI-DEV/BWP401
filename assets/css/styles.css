@@ -1,0 +1,54 @@
+:root {
+  --primary: #0d6efd;
+  --secondary: #6c757d;
+  --bg-neutral: #f8f9fa;
+  --text-main: #212529;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  color: var(--text-main);
+  background-color: #ffffff;
+}
+
+.hero-section {
+  background: linear-gradient(140deg, #e7f0ff, #f6f9ff);
+}
+
+.card {
+  border: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.12) !important;
+}
+
+footer {
+  background-color: #111827 !important;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  left: 16px;
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  display: none;
+  z-index: 1040;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.scroll-top-btn.show {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero-section .display-6 {
+    font-size: 1.75rem;
+  }
+}
